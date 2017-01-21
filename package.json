@@ -1,0 +1,27 @@
+{
+  "name": "journal-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/setoalan/journal-one.git"
+  },
+  "author": "Alan Seto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/setoalan/journal-one/issues"
+  },
+  "homepage": "https://github.com/setoalan/journal-one#readme",
+  "scripts": {
+    "start": "harp server --port $PORT",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "harp": "*",
+    "bower": "^1.8"
+  }
+}
