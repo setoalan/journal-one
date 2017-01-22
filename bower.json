@@ -4,9 +4,9 @@
   "authors": [
     "Alan Seto <alantseto@gmail.com>"
   ],
-  "description": "",
+  "description": "Thought Provoking Question of the Day",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://journal-one.herokuapp.com/",
   "ignore": [
     "**/.*",
     "node_modules",

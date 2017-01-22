@@ -1,8 +1,8 @@
 {
   "name": "journal-one",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.php",
+  "description": "Thought Provoking Question of the Day",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/setoalan/journal-one/issues"
   },
-  "homepage": "https://github.com/setoalan/journal-one#readme",
+  "homepage": "https://journal-one.herokuapp.com/",
   "scripts": {
     "start": "harp server --port $PORT",
     "postinstall": "bower install"
