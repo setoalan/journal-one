@@ -1,10 +1,10 @@
 {
   "name": "journal-one",
-  "version": "1.0.0",
-  "description": "Thought Provoking Question of the Day",
+  "version": "1.0.1",
+  "description": "Journal One: Thought Provoking Question of the Day",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "harp server --port $PORT"
   },
   "repository": {
     "type": "git",
@@ -16,12 +16,18 @@
     "url": "https://github.com/setoalan/journal-one/issues"
   },
   "homepage": "https://journal-one.herokuapp.com/",
-  "scripts": {
-    "start": "harp server --port $PORT",
-    "postinstall": "bower install"
-  },
   "dependencies": {
-    "harp": "*",
-    "bower": "^1.8"
+    "harp": "*"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-usemin": "^0.3.27",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
   }
 }
