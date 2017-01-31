@@ -6,7 +6,7 @@
   ],
   "description": "Thought Provoking Question of the Day",
   "license": "MIT",
-  "homepage": "https://journal-one.herokuapp.com/",
+  "homepage": "http://journalone.co",
   "ignore": [
     "**/.*",
     "node_modules",

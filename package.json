@@ -1,6 +1,6 @@
 {
   "name": "journal-one",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Journal One: Thought Provoking Question of the Day",
   "main": "index.html",
   "scripts": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/setoalan/journal-one/issues"
   },
-  "homepage": "https://journal-one.herokuapp.com/",
+  "homepage": "http://journalone.co/",
   "dependencies": {
     "harp": "*"
   },
