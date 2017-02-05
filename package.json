@@ -17,7 +17,10 @@
   },
   "homepage": "http://journalone.co/",
   "dependencies": {
-    "harp": "*"
+    "bootstrap": "^3.3.7",
+    "harp": "*",
+    "jquery": "^3.1.1",
+    "moment": "^2.17.1"
   },
   "devDependencies": {
     "del": "^2.2.2",
