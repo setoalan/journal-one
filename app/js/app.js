@@ -36,7 +36,7 @@ var questions = [
   'What is important enough to go to war over?',
   'Which is worse, failing or never trying?',
   'When was the last time you listened to the sound of your own breathing?',
-  'What&#39;s something you know you do differently than most people?',
+  'What\'s something you know you do differently than most people?',
   'What does ‘The American Dream&#39; mean to you?',
   'Would you rather be a worried genius or a joyful simpleton?',
   'If you could instill one piece of advice in a newborn baby&#39;s mind, what advice would you give?',
@@ -366,10 +366,9 @@ var questions = [
   'How would you describe your future in three words?'
 ];
 
-$('#date').html('<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>');
+const question = (moment().dayOfYear() != 366) ? questions[moment().dayOfYear() - 1] : questions[Math.floor(Math.random() * questions.length)];
 
-if (moment().dayOfYear() != 366) {
-  $('#journalQuestion').html('<p>' + questions[moment().dayOfYear() - 1] + '</p>');
-} else {
-  $('#journalQuestion').html('<p>' + questions[Math.floor(Math.random() * questions.length)] + '</p>');
-}
+$('#date').html('<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>');
+$('#journalQuestion').html('<p>' + question + '</p>');
+$('#dayOneDiv').html('<a href=dayone://post?entry=' + encodeURI(question) + '%0A>Journal in Day One</>');
+$('#dayOneDiv').children('a').addClass('dayOneButton');
