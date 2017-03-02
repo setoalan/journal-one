@@ -370,5 +370,4 @@ const question = (moment().dayOfYear() != 366) ? questions[moment().dayOfYear() 
 
 $('#date').html('<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>');
 $('#journalQuestion').html('<p>' + question + '</p>');
-$('#dayOne').html('<a href=dayone://post?entry=' + encodeURI(question) + '%0A>Journal in Day One</>');
-$('#dayOne').children('a').addClass('dayOneButton');
+$('#journalQuestion').after('<div align="center"><a id="dayOne" href=dayone://post?entry=' + encodeURI(question) + '%0A>Journal in Day One</a></div>');
