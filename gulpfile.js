@@ -1,24 +1,15 @@
 var gulp = require('gulp'),
-  minifycss = require('gulp-minify-css'),
   jshint = require('gulp-jshint'),
   stylish = require('jshint-stylish'),
-  uglify = require('gulp-uglify'),
   usemin = require('gulp-usemin'),
-  rev = require('gulp-rev'),
-  del = require('del');
+  rev = require('gulp-rev');
+  minifycss = require('gulp-minify-css'),
+  uglify = require('gulp-uglify'),
 
 gulp.task('jshint', function() {
   return gulp.src(['./app/js/index.js', './app/js/analytics.js'])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
-});
-
-gulp.task('clean', function() {
-  return del(['dist']);
-});
-
-gulp.task('default', ['clean'], function() {
-  gulp.start(['usemin']);
 });
 
 gulp.task('usemin', ['jshint'], function() {
@@ -28,4 +19,8 @@ gulp.task('usemin', ['jshint'], function() {
       js: [uglify(), rev()]
     }))
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', function() {
+  gulp.start(['usemin']);
 });
