@@ -366,10 +366,8 @@ var questions = [
   'How would you describe your future in three words?'
 ];
 
-$('#date').html('<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>');
+const question = (moment().dayOfYear() != 366) ? questions[moment().dayOfYear() - 1] : questions[Math.floor(Math.random() * questions.length)];
 
-if (moment().dayOfYear() != 366) {
-  $('#journalQuestion').html('<p>' + questions[moment().dayOfYear() - 1] + '</p>');
-} else {
-  $('#journalQuestion').html('<p>' + questions[Math.floor(Math.random() * questions.length)] + '</p>');
-}
+$('#date').html('<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>');
+$('#journalQuestion').html('<p>' + question + '</p>');
+$('#journalQuestion').after('<div align="center"><a id="dayOne" href=dayone://post?entry=' + encodeURI(question) + '%0A>Journal in Day One</a></div>');

@@ -10,12 +10,10 @@
 
   <title>Journal One</title>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
   <!-- build:css styles/main.css -->
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   <!-- endbuild -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -26,35 +24,33 @@
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div id="date">
-          ...
-        </div>
-        <p>T&nbsp;H&nbsp;O&nbsp;U&nbsp;G&nbsp;H&nbsp;T&nbsp;&nbsp;
-          P&nbsp;R&nbsp;O&nbsp;V&nbsp;O&nbsp;K&nbsp;I&nbsp;N&nbsp;G<br>
-          Q&nbsp;U&nbsp;E&nbsp;S&nbsp;T&nbsp;I&nbsp;O&nbsp;N&nbsp;&nbsp;
-          O&nbsp;F&nbsp;&nbsp;&nbsp;T&nbsp;H&nbsp;E&nbsp;&nbsp;&nbsp;D&nbsp;A&nbsp;Y
-        </p>
-        <div id="journalQuestion">
-          ...
-        </div>
-      </div>
+    <div id="date">
+      <p>
+        ...
+      </p>
+    </div>
+    <div>
+      <p>T&nbsp;H&nbsp;O&nbsp;U&nbsp;G&nbsp;H&nbsp;T&nbsp;&nbsp;
+        P&nbsp;R&nbsp;O&nbsp;V&nbsp;O&nbsp;K&nbsp;I&nbsp;N&nbsp;G<br>
+        Q&nbsp;U&nbsp;E&nbsp;S&nbsp;T&nbsp;I&nbsp;O&nbsp;N&nbsp;&nbsp;
+        O&nbsp;F&nbsp;&nbsp;&nbsp;T&nbsp;H&nbsp;E&nbsp;&nbsp;&nbsp;D&nbsp;A&nbsp;Y
+      </p>
+    </div>
+    <div id="journalQuestion">
+      <p>
+        ...
+      </p>
+    </div>
+    <div id="footer">
+      <p>Questions from <a href="http://marcandangel.com/2011/03/14/365-thought-provoking-questions-to-ask-yourself-this-year/" target="_blank">Marc and Angel Hack Life</a> | Made by <a href="http://alanseto.com/" target="_blank">Alan Seto</a></p>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted text-footer">Questions from <a href="http://www.marcandangel.com/2011/03/14/365-thought-provoking-questions-to-ask-yourself-this-year/" target="_blank">Marc and Angel Hack Life</a> | Made by <a href="http://alanseto.com/" target="_blank">Alan Seto</a></p>
-    </div>
-  </footer>
-
   <!-- build:js scripts/main.js -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/moment/min/moment.min.js"></script>
-    <script src="js/app.js" type="text/javascript"></script>
-    <script src="js/analytics.js" type="text/javascript"></script>
+    <script src="./js/analytics.js"></script>
+    <script src="./js/app.js"></script>
   <!-- endbuild -->
 
 </body>
