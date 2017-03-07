@@ -1,6 +1,6 @@
 {
   "name": "journal-one",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Journal One: Thought Provoking Question of the Day",
   "main": "index.html",
   "repository": {
@@ -8,20 +8,20 @@
     "url": "git+https://github.com/setoalan/journal-one.git"
   },
   "author": "Alan Seto",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/setoalan/journal-one/issues"
   },
   "homepage": "http://journalone.co/",
   "dependencies": {
-    "jquery": "^3.1.1",
     "moment": "^2.17.1"
   },
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
     "gulp-jshint": "^2.0.4",
-    "gulp-minify-css": "^1.2.4",
     "gulp-rev": "^7.1.2",
     "gulp-uglify": "^2.0.1",
     "gulp-usemin": "^0.3.27",
