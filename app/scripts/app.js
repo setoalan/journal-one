@@ -1,4 +1,4 @@
-var questions = [
+const questions = [
   'When was the last time you tried something new?',
   'Who do you sometimes compare yourself to?',
   'What\'s the most sensible thing you\'ve ever heard someone say?',
@@ -366,8 +366,8 @@ var questions = [
   'How would you describe your future in three words?'
 ];
 
-const question = (moment().dayOfYear() != 366) ? questions[moment().dayOfYear() - 1] : questions[Math.floor(Math.random() * questions.length)];
+const question = (moment().dayOfYear() !== 366) ? questions[moment().dayOfYear() - 1] : questions[Math.floor(Math.random() * questions.length)];
 
-$('#date').html('<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>');
-$('#journalQuestion').html('<p>' + question + '</p>');
-$('#journalQuestion').after('<div align="center"><a id="dayOne" href=dayone://post?entry=' + encodeURI(question) + '%0A>Journal in Day One</a></div>');
+document.getElementById('date').innerHTML = '<p>' + moment().format('dddd, MMMM Do, YYYY') + '</p>';
+document.getElementById('journalQuestion').innerHTML = '<p>' + question + '</p>';
+document.getElementById('dayOne').href = 'dayone://post?entry=' + encodeURI(question) + '%0A';

@@ -17,6 +17,24 @@ p {
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
+  align-items: center;
+}
+
+#headers {
+  text-indent: 0.75em;
+  letter-spacing: 0.75em;
+}
+
+#headers p:first-child {
+  margin-bottom: 0;
+}
+
+#headers p:last-child {
+  margin-top: 0;
+}
+
+#dayOneDiv {
+  margin-top: 10px;
 }
 
 #dayOne {
@@ -24,8 +42,8 @@ p {
   color: #3bbfff;
   border: 1px #3bbfff solid;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   background-color: white;
 }
 
@@ -37,55 +55,35 @@ p {
 #footer {
   position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
   align-self: center;
 }
 
-.dayOneButton {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  text-decoration: none;
-  color: white;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #3bbfff;
-}
-
-.dayOneButton:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #7fbfff;
-}
-
-#date,
-#journalQuestion,
-#dayOne {
-  text-align: center;
-}
-
 @media (max-width: 768px) {
+
   p {
     font-size: 1.5em;
   }
 
   #footer > p {
-    font-size: .5em;
+    font-size: 0.5em;
   }
+
 }
 
 @media (min-width: 768px) {
+
   p {
     font-size: 2em;
   }
 
   #footer > p {
-    font-size: .75em;
+    font-size: 0.75em;
   }
+
 }
 
 @media (min-width: 1200px) {
+
   p {
     font-size: 3em;
   }
@@ -93,4 +91,5 @@ p {
   #footer > p {
     font-size: 1em;
   }
+
 }
